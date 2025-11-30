@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <Title>Games I am Playing</Title>
+    </head>
+
+    <body>
+        <h1>Games I Am Playing</h1>
+        <img src="https://media.sciencephoto.com/f0/28/99/00/f0289900-800px-wm.jpg" alt="Guy playing games on a TV">
+        <p>Written By: Jose Viera</p>
+
+        <p>I have played a lot of games throughout my life. From triple-A titles such as Legend of Zelda, to indie games like Hollow Knight, I have played a wide
+            variety of games from a large amount of genres. In this article, I will list games I am playing as of this moment, and my current thought on them!
+        </p>
+
+        <h2>UmaMusume: Pretty Derby!</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/31/Umamusume_Pretty_Derby_game_cover.jpg" alt="A group of characters with horse ears running">
+        <p>The game I have been playing the most recently is UmaMusume! It is a game where you can raise students, called UmaMusume since they are horse girls, 
+            to race against other horse girls. Throughout the course of the game, you get to learn more about the girls and learn about their aspirations. How 
+            it is done is very compelling, because these horse girls are based on real horses that raced in Japan! It is a very fun game that has helped me learn 
+            in a way I haven't thought of before!
+        </p>
+
+        <h2>Hollow Knight: Silksong</h2>
+        <img src="https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000105851/8787627be7f26ae7984456ffd9af17bea845032cebbf59fe6eeb596dea6bb20e">
+        <p>Hollow Knight: Silksong, also known as just Silksong, is a game made by a small team of 3 people, and was made as a follow up to the critically 
+            acclaimed Hollow Knight. I am still in the middle of playing it, but have been enjoying it the whole way through. It is a soulslike game, which means 
+            that combat is usually very difficult, and its not uncommon to get a game over when playing, but in fact expected. I would highly recommend if you 
+            want a challenge and want to support indipendent creators!
+        </p>
+
+        <h2>Pokemon Legends: Z-A</h2>
+        <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000094234/357e68d5f1e168a213f3b2db2dda7da9e0ba2c0f0900360cc72c3f90649f7091">
+        <p>The newest installment in the Pokemon series, this game has a lot of things taht make it different frm the mainline games. It uses a style of combat 
+            completely unique to it game, where you can just attack without having to wait for another move to happen. The removal of this turn based combat makes 
+            the game feel refreshing and unique. A fan, and personal, favorite mechanic, Mega Evolutions, also return, with a lot more evolutions available. Since 
+            this is not a mainline series game, this style of gameplay will probably be restricted to just this game, but I am enjoying while I can!
+        </p>
+
+        <h3>Comments</h3>
+
+        <input id="commentInput" type="text" placeholder="Write a comment">
+        <button onclick="addComment()">Add Comment</button>
+
+        <div id="comments"></div>
+
+        <script>
+        function addComment() {
+          let text = document.getElementById("commentInput").value;
+          if (text.trim() === "") return;
+
+          let comment = document.createElement("div");
+          comment.className = "comment";
+          comment.textContent = text;
+
+          document.getElementById("comments").appendChild(comment);
+
+          document.getElementById("commentInput").value = "";
+        }
+        </script>
+    </body>
+
+</html>
