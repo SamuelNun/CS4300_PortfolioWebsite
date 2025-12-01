@@ -35,3 +35,41 @@ button {
     width: 10%;
     height: 50px;
 }
+
+.hero {
+    height: 5vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 120px;
+}
+
+.hero .underline {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+nav {
+    position: fixed;
+    background-color: #000000ff;
+    width: 100%;
+    top: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+li {
+    font-size: larger;
+    padding: 0 50px;
+}
+
+li:hover {
+    font-size: x-large;
+}

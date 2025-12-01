@@ -1,0 +1,138 @@
+<html><!--Start the html file-->
+    <head><!--Start the head-->
+        <meta charset="utf-8"> <!--Have the file use the utf 8 character set-->
+        <title>About Me</title><!--Add a title to the top of the web page-->
+        <style type = "text/css">
+            @media all
+            {
+               body  { background-color: SteelBlue; }
+               h1    { font-family: verdana, helvetica, sans-serif;
+                       color: PaleGreen; } 
+               p     { font-size: 12pt;
+                       color: seagreen;
+                       font-family: arial, sans-serif; }
+            } 
+            @media print
+            {
+               body  { background-color: white; }
+               h1    { color: SeaGreen; }
+               p     { font-size: 12pt;
+                       color: skyblue;
+                       font-family: "times new roman", times, serif; }
+            } 
+            body.text{
+                color:aqua;
+                font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+                background-color: black;
+            }
+            @keyframes bounce {
+                0%, 100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-15px);
+                }
+            }
+            img {
+                width: 250px;
+                border-radius: 15px;
+                margin-top: 20px;
+                animation: bounce 2s infinite;
+            }
+        </style>
+        <link rel="stylesheet" href="../current_games/styles.css">
+    </head><!--End the head of the file-->
+
+    <body class="text"><!--Start the body of the page-->
+        <section class="hero" id="home">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#articles">Articles</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <h1>About Me</h1><!--Have the title in big bold letters-->
+        <p>Hello, my name is Jose Viera and I am a computer science major at the University of Houston - Downtown. I am currently a senior <!--Start the paragraph-->
+            and am graduating during the spring of 2026.
+        </p> <!--End the paragraph-->
+        <p>I love programming, and have wanted to do it since I was in middle school, but wasnt able to until I started college, <!--Start the paragraph-->
+            where I learned to like it more and more .I did an internship this summer with Lockheed Martin in Orlando, 
+            Florida, where I learned a lot and had a lot of fun!
+        </p><!--End the paragraph-->
+        <p><a href="https://github.com/pepojusty">This</a><!--Add a link to the file--> is my github page, where I have some small projects and <!--Start the paragraph-->
+            will use later to post the source code for my book tracking app!
+        </p><!--End the paragraph-->
+        <p>This is one of my dogs, whole likes to chew through cables and play with his dad :). He does get into trouble sometimes, <!--Start the paragraph-->
+            but we are quick to forgive him because he is just too cute lol
+        </p><!--End the paragraph-->
+        <img src="jose_dog.webp"><!--Add an image to the file-->
+
+        <p>These are my favorite foods</p>
+        <ol>
+            <li>Chicken and rice</li>
+            <li>Burgers</li>
+            <li>Menudo</li>
+            <li>Fried chicken</li>
+        </ol>
+
+        <table border = "1">
+
+         <!-- the <caption> tag summarizes the table's -->
+         <!-- contents (this helps visually impaired people) -->
+         <caption><strong>Class (1st column) 
+		    Time Taken (2nd column) Day (3rd Colmn)</strong></caption>
+
+         <!-- the <thead> section appears first in the table -->
+         <!-- it formats the table header area -->
+         <thead>
+            <tr> <!-- <tr> inserts a table row -->
+               <th>Class</th> <!-- insert a heading cell -->
+               <th>Time</th>
+               <th>Day</th>
+            </tr>
+         </thead>
+
+         <!-- the <tfoot> section appears last in the table -->
+         <!-- it formats the table footer -->
+
+         <!-- all table content is enclosed -->
+         <!-- within the <tbody> -->
+         <tbody>
+            <tr>
+              <td>BIOL 1101</td> <!-- insert a data cell -->
+              <td>11:30AM-2:15PM</td>
+               <td>Mon</td>
+            </tr>
+            <tr>
+               <td>BIOL 1301</td>
+               <td>8:30AM-10:15AM</td>
+               <td>Tue-Thurs</td>
+            </tr>
+            <tr>
+               <td>CS 4300</td>
+               <td>1:00PM-2:15PM</td>
+               <td>Tues</td>
+            </tr>
+            <tr>
+               <td>CS 4318</td>
+               <td>10:00AM-11:15AM</td>
+               <td>Wen</td>
+            </tr>
+            <tr>
+                <td>CS 4294</td>
+                <td>1:00PM-2:15PM</td>
+                <td>Wen</td>
+            </tr>
+            <tr>
+                <td>CS 4315</td>
+                <td>4:00PM-5:15PM</td>
+                <td>Thurs</td>
+            </tr>
+         </tbody>
+      </table>
+    </body><!--End the body of the file-->
+</html><!--End the html file-->
