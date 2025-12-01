@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rayen Ben Aoun's HTML Website</title>
+  <style>
+    body {
+      background-image: url('red.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      transition: background-color 0.5s ease;
+    }
+
+    .box {
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: darkred;
+    }
+
+    p, li, a {
+      color: darkgreen;
+    }
+
+    textarea {
+      width: 100%;
+      height: 80px;
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      background-color: darkred;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #a00000;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 14px;
+      }
+      .box {
+        width: 90%;
+        padding: 15px;
+      }
+      img {
+        width: 150px;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1>About Me</h1>
+    <p>Hello! My name is Ahmed Rayen Ben Aoun, and I am an international student from Tunisia. I’ve been in the U.S. for about four years and am finishing my Computer Science degree. I love sports, games, and playing guitar. I also speak French, Arabic, and English.</p>
+
+    <h2>Favorite Websites</h2>
+    <p><a href="https://www.youtube.com/" target="_blank">YouTube</a></p>
+    <p><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+
+    <h2>Top 7 Tunisian Dishes</h2>
+    <ol>
+      <li>Dewida Mfawhra</li>
+      <li>Couscous</li>
+      <li>Makloub</li>
+      <li>Baguette Farcie</li>
+      <li>Makrouna Hamra</li>
+      <li>Aasida</li>
+      <li>Kefteji</li>
+    </ol>
+
+    <h2>Ask Me About Tunisian Food!</h2>
+    <form onsubmit="thankYou(); return false;">
+      <textarea placeholder="Your Feedback"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+  <p><a href="../index.html" style="color:#ffdd66;">⬅ Back Home</a></p>
+
+
+    <img src="Yosha.gif" width="220" height="124" alt="Vegito Yelling Yosha">
+  </div>
+
+  <!-- JavaScript Section -->
+  <script>
+    // Dynamic Greeting Based on Time of Day
+    window.onload = function() {
+      const hour = new Date().getHours();
+      let greeting;
+
+      if (hour < 12) {
+        greeting = "Good morning, Rayen!";
+      } else if (hour < 18) {
+        greeting = "Good afternoon, Rayen!";
+      } else {
+        greeting = "Good evening, Rayen!";
+      }
+
+      const header = document.createElement("h2");
+      header.textContent = greeting;
+      header.style.color = "darkred";
+      header.style.textAlign = "center";
+      document.body.prepend(header);
+    };
+
+    
+
+    // Thank You Alert on Form Submission
+    function thankYou() {
+      alert("Thanks for your feedback!");
+    }
+  </script>
+</body>
+</html>

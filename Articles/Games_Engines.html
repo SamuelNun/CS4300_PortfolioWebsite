@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Game Engines Overview</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: url('images/space_bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #e0e0e0;
+  }
+
+  .box {
+    background: rgba(0, 0, 0, 0.82);
+    width: 85%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 12px;
+  }
+
+  h1 {
+    color: #ffdd66;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: #ffc640;
+    margin-top: 30px;
+  }
+
+  .engine-title {
+    color: #8dcfff;
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  .engine-desc {
+    margin-left: 5px;
+    color: #cccccc;
+    line-height: 1.45;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .funbox {
+    background: rgba(50,50,50,0.5);
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+  button {
+    background: #ffdd66;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  button:hover {
+    background: #ffe597;
+  }
+</style>
+</head>
+
+<body>
+<div class="box">
+  <h1>Understanding Game Engines</h1>
+
+  <p>
+    A game engine is a core software framework used to build and run video games.  
+    It supplies essential systems such as rendering, physics, animation, audio handling, scripting, asset loading, and performance optimization. Rather than writing all of these components manually from scratch, developers can work inside an established engine, which enables faster production, more stable builds, and consistent multiplatform output.
+  </p>
+
+  <p>
+    Although different engines provide different levels of control and graphical fidelity, the goal is the same: to provide a development environment in which designers, programmers, artists, and sound engineers can collaboratively build a functioning interactive world.
+  </p>
+
+  <h2>Major Game Engines</h2>
+
+  <p class="engine-title">
+    <a href="https://www.unrealengine.com" class="engine-title" target="_blank">Unreal Engine</a>
+  </p>
+  <span class="engine-desc">
+    Unreal Engine is widely recognized for its high-end visual capabilities, advanced lighting systems, and real-time cinematic rendering. It excels at producing realistic environments and is a preferred engine for AAA productions, architectural visualization, simulation, and modern cinematic game experiences.
+  </span>
+
+  <p class="engine-title">
+    <a href="https://unity.com" class="engine-title" target="_blank">Unity</a>
+  </p>
+  <span class="engine-desc">
+    Unity is known for its flexibility and accessibility. It is extensively used in mobile development, VR/AR applications, and indie production. Its component-based workflow and strong marketplace of community assets make it efficient for rapid iteration and cross-platform deployment.
+  </span>
+
+  <p class="engine-title">
+    <a href="https://godotengine.org" class="engine-title" target="_blank">Godot</a>
+  </p>
+  <span class="engine-desc">
+    Godot is a fully open-source engine that emphasizes lightweight performance and intuitive scripting. It allows developers to adopt a simplified and modular design approach. The absence of licensing fees or royalties makes it especially appealing to independent teams and experimental designers.
+  </span>
+
+  <p class="engine-title">
+    <a href="https://www.valvesoftware.com" class="engine-title" target="_blank">Source Engine</a>
+  </p>
+  <span class="engine-desc">
+    Developed by Valve, the Source Engine is known for its strong physics simulation and stable networking model. It powered influential titles such as Half-Life 2, Counter-Strike: Source and Portal, and paved the way for modern first-person multiplayer game design through modding and community-driven content tools.
+  </span>
+
+  <p class="engine-title">
+    <a href="https://www.rpgmakerweb.com/" class="engine-title" target="_blank">RPG Maker</a>
+  </p>
+  <span class="engine-desc">
+    RPG Maker provides a structured development environment aimed at narrative-driven and retro-style RPGs. It abstracts away complex programming requirements and allows creators to focus on story, characters, and event progression while still offering customization through scripting for advanced users.
+  </span>
+
+  <div class="funbox">
+    <p id="fact">Click below to display a random historical or technical note about game engines:</p>
+    <button onclick="showFact()">Generate Fact</button>
+  </div>
+
+  <p style="margin-top:20px;">
+    <a href="../index.html" style="color:#ffdd66;">⬅ Back Home</a>
+  </p>
+</div>
+
+<script>
+function showFact() {
+  const facts = [
+    "Unreal Engine’s Nanite system allows extremely detailed geometry with minimal performance cost.",
+    "Unity originally launched in 2005 as a Mac-only development tool.",
+    "Godot’s scene/node architecture allows developers to assemble functionality like building blocks.",
+    "The Source Engine’s physics are built on the Havok middleware system.",
+    "RPG Maker titles have been released commercially on Steam, consoles, and mobile platforms."
+  ];
+  document.getElementById("fact").textContent =
+    facts[Math.floor(Math.random() * facts.length)];
+}
+</script>
+
+</body>
+</html>
