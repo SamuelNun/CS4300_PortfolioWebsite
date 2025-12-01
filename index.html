@@ -4,8 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS4300 Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
+    <section class="hero" id="home">
+        <h1><span class="underline">Orion Times</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="sub-section" id="articles">
+        <h2><span class="underline">Articles</span></h2>
+
+        <div class="article">
+            <img class="image" src="https://assetsio.gnwcdn.com/umamusume-0.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp" alt="Jose's website">
+            <div class="title">
+                <div class="tag">Personal</div>
+                <h3><a href="#">Jose's Current Top Games</a></h3>
+                <div class="date">11/29/2025</div>
+            </div>
+        </div>
+        <div class="article">
+            <img class="image" src="https://www.stardewvalley.net/wp-content/uploads/2018/12/1_1screenshot15.png" alt="Sam's Website">
+            <div class="title">
+                <div class="tag">Personal</div>
+                <h3><a href="#">Samuel's Top Game Picks</a></h3>
+                <div class="date">12/01/2025</div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="sub-section" id="about">
+        <h2><span class="underline">About us</span></h2>
+        <p>We are a group of friends who love playing games, talking about games, and coming up with new ideas inspired by our favorite game titles. To us, gaming is more than just a hobby, it’s a global community that brings people together. Games create shared experiences, connect players from around the world, and allow everyone to express themselves through creativity, teamwork, and storytelling. It’s this sense of community and connection that inspires our passion for gaming.</p>
+        <ul class="socials">
+            <li>   
+                <a href="#" alt="Sam">
+                    <img class="portrait" src="./portraits/samuel.webp">
+                    <i>Samuel Nunez</i>
+                </a>
+            </li>
+            <li>   
+                <a href="#" alt="">
+                    <img class="portrait" src="">
+                    <i></i>
+                </a>
+            </li>
+            <li>   
+                <a href="#" alt="">
+                    <img class="portrait" src="">
+                    <i></i>
+                </a>
+            </li>
+            <li>   
+                <a href="#" alt="">
+                    <img class="portrait" src="">
+                    <i></i>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="sub-section" id="contact">
+        <h2><span class="underline">Contact us</span></h2>
+        <div class="container">
+            <form action="">
+                <input type="email" id="emails" name="emails" placeholder="Your email address..">
+                <textarea name="subject" id="subject" placeholder="Write something.." style="height: 100px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Authors: Samuel Nunez, Jose Viera, <br>Rayen Ben Aoun, Gabriel Coronado<br>
+        </p>
+    </footer>   
 </body>
 </html>
