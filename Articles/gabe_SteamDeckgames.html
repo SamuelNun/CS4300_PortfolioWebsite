@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Top 5 Games I Played This Year</title>
+
+<style>
+   body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 40px auto;
+      max-width: 900px;
+      line-height: 1.6;
+   }
+
+   
+
+   h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+   }
+
+   h5 {
+      font-size: 1.1rem;
+      text-align: center;
+   }
+
+   .intro {
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+      background: #c9c9c9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+   }
+
+   .game-section {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+      padding: 20px;
+      border-radius: 10px;
+      background: #f5f5f5;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+   }
+
+   .game-text {
+      width: 55%;
+   }
+
+   .video-box {
+      width: 45%;
+   }
+   
+
+   iframe {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+   }
+
+   @media (max-width: 750px) {
+      .game-section {
+         flex-direction: column;
+      }
+      .game-text, .video-box {
+         width: 100%;
+      }
+   }
+</style>
+</head>
+
+<body>
+
+<section class="hero" id="home">
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#articles">Articles</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</section>    
+
+<h1>Gabriel's Picks For Steam Deck</h1>
+<h5>Written by: Gabriel Coronado</h5>
+
+<div class="intro">
+   <p>
+      Handheld gaming has been more popular than ever and it's thanks in part to the Steam Deck created by Valve. Thanks to it's affordability and performance,
+      steam's constantly expanding library and end user support; not only do users have a handheld option for pc gaming but they have a pc device in general as 
+      the steam deck can be used dock and in a desktop mode similar to a windows machine. Truely one of the greatest options to get into pc gaming or to expand
+      upon your capabilities. That being said, here are my top 5 picks to experience on the Steam Deck.
+   </p>
+</div>
+
+<div class="game-section">
+   <div class="game-text">
+      <h2>#1 — Metal Gear Solid Series</h2>
+      <p>
+         The Metal Gear Saga is one of the best fictional experiences ever and is a great way to experience how great the steam deck is. Especially in regards to
+          the oled model, the soundtrack, the vocals and performance; all are highlighted in the oled model and was one of the best ways I ever experienced the MGS
+          franchise.
+      </p>
+   </div>
+
+   <div class="video-box" id="vid1"></div>
+</div>
+
+
+
+<div class="game-section">
+   <div class="game-text">
+      <h2>#2 — Deltarune</h2>
+      <p>
+        This game was such a ride, being as it is right now, it's a worth-while experience to be had on your steam deck, especially on the oled as the colors are just
+        super vibrant and the speakers on the system really help lift the experience as the music isn't compromised. A must play game, geniunely.
+      </p>
+   </div>
+
+   <div class="video-box" id="vid3"></div>
+</div>
+
+<div class="game-section">
+   <div class="game-text">
+      <h2>#3 — Baldur’s Gate 3</h2>
+      <p>
+         Baldur’s Gate 3 absorbed my life for weeks. The writing is incredible, and the freedom to shape your character’s story feels unmatched. Every choice matters 
+         — sometimes in hilarious ways. No two playthroughs feel the same. Being able to bring it along with you is such a fantastic addition to your breaks or commute.
+      </p>
+   </div>
+
+   <div class="video-box" id="vid2"></div>
+</div>
+
+<div class="game-section">
+   <div class="game-text">
+      <h2>#4 — Yakuza Collection</h2>
+      <p>
+         This series is amazing, it's chalked full of story and drama, some of the best characters you'll ever meet, and gameplay that is addicting. This had a grip on
+         my everyday life for a good two years and being able to take it on the go was such a massive bonus. The games being mostly on last gen consoles make it super easy
+         to run on the steam deck.
+      </p>
+   </div>
+
+   <div class="video-box" id="vid4"></div>
+</div>
+
+<div class="game-section">
+   <div class="game-text">
+      <h2>#5 — Persona 3 Reloaded</h2>
+      <p>
+         While my favorite will always be Persona 2 Innocent Sin and Eternal Punishment, this is a great entry into the series that is geniunely a great experience to be had on the
+         steam deck oled as the colors pop and the soundtrack sounds amazing with the quality sound drivers the steam deck possesses.
+      </p>
+   </div>
+
+   <div class="video-box" id="vid5"></div>
+</div>
+
+<script>
+   function loadVideo(containerId, youtubeLink) {
+      const box = document.getElementById(containerId);
+      const iframe = document.createElement("iframe");
+      iframe.src = youtubeLink;
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+      box.appendChild(iframe);
+   }
+
+   loadVideo("vid1", "https://www.youtube.com/embed/sKMayCD1u3w");
+   loadVideo("vid2", "https://www.youtube.com/embed/1T22wNvoNiU");
+   loadVideo("vid3", "https://www.youtube.com/embed/CN4ZcGJoZac");
+   loadVideo("vid4", "https://www.youtube.com/embed/eeKcgXuewvg");
+   loadVideo("vid5", "https://www.youtube.com/embed/xFtdhQoOMH0");
+</script>
+
+</body>
+</

@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PC Alternatives</title>
+
+<style>
+
+   body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+   }
+
+   .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+   }
+
+   h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #1a1a1a;
+   }
+
+   h2 {
+      font-size: 1.8rem;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      color: #0078ff;
+      text-align: left;
+   }
+
+   .section {
+      background: #fff;
+      padding: 25px 20px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+   }
+
+   .section:hover {
+      transform: translateY(-3px);
+   }
+
+   p {
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+   }
+
+   button {
+      margin-top: 10px;
+      padding: 10px 22px;
+      border: none;
+      border-radius: 8px;
+      background: #0078ff;
+      color: white;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s, transform 0.2s;
+   }
+
+   button:hover {
+      background: #005fcc;
+      transform: scale(1.05);
+   }
+
+   .video-box {
+      margin-top: 15px;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      position: relative;
+      display: none;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+   }
+
+   .video-box iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 0;
+   }
+
+      .top-video {
+      margin-bottom: 30px;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+   }
+
+   .top-video iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 0;
+   }
+
+   .device-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 1rem;
+   }
+
+   .device-table th, .device-table td {
+      border: 1px solid #ccc;
+      padding: 12px 10px;
+      text-align: left;
+   }
+
+   .device-table th {
+      background: #0078ff;
+      color: white;
+   }
+
+   @media (max-width: 600px) {
+      h1 {
+         font-size: 2rem;
+      }
+      h2 {
+         font-size: 1.5rem;
+      }
+      button {
+         width: 100%;
+      }
+   }
+</style>
+
+<body>
+
+<section class="hero" id="home">
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#articles">Articles</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</section>    
+
+<h1>The Many Platforms of Steam, Alternatives To PC Gaming</h1>
+
+<div class="top-video">
+   <iframe src="https://www.youtube.com/embed/OmKrKTwtukE" 
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+           allowfullscreen></iframe>
+</div>
+
+<div class="section">
+   <p>
+      Valve has spent the last decade experimenting with ways to bring PC gaming into more 
+      accessible and console-like formats. Each project pushed the idea forward, eventually 
+      leading to hardware that resonated with millions of players. Valve maintains a monopoly 
+      over the PC space and honestly, I personally wouldn't have it any other way. This is a
+       company that seeks to innovate no matter what competition may try to challenge them, maintaining
+      one of the most respected companies ever created through it's creations and company philosphies.
+   </p>
+</div>
+
+<h2>Steam Machine – A Idea Ahead of Its Time Comes Back Again</h2>
+<div class="section">
+   <p>
+      Initially launched in 2015, the Steam Machine was Valve’s first hardware push. These compact PCs 
+      running SteamOS were meant to bring PC gaming to the living room but struggled due to 
+      compatibility issues and pricing. In recent times, they try once again with the Steam Machine as Valve
+      maintains a monopoly over the PC sphere, a sphere significantly more popular than it ever was back in
+      the initial launch.
+   </p>
+
+   <button onclick="loadVideo('machineVideo', 'https://www.youtube.com/embed/2rv83LgXiN0')">
+      Show Steam Machine Video
+   </button>
+   <div class="video-box" id="machineVideo"></div>
+</div>
+
+<!-- STEAM DECK -->
+<h2>Steam Deck – Valve’s Breakthrough Success</h2>
+<div class="section">
+   <p>
+      Released in 2022, the Steam Deck became an instant hit. It combined PC power with handheld 
+      convenience and introduced Proton compatibility, making thousands of Windows games playable 
+      on Linux. The success of the Steam Deck led to a boom in PC-handheld gaming and interest in PCs
+      in general as the Steam Deck was more than just a PC-hanheld, with it being able to dock to a 
+      monitor and be utilized as a full fledge desktop with it's competent hardware and accessibility.
+   </p>
+
+   <button onclick="loadVideo('deckVideo', 'https://www.youtube.com/embed/Z1KLj06fn2s')">
+      Show Steam Deck Video
+   </button>
+   <div class="video-box" id="deckVideo"></div>
+</div>
+
+<!-- STEAM FRAME -->
+<h2>Steam Frame – The Next Step in Valve’s Vision</h2>
+<div class="section">
+   <p>
+      The Steam Frame is a simple, affordable streaming device meant for living-room gaming. 
+      Rather than running games itself, it streams them from your PC or Steam Deck with very 
+      little latency. It serves as a alternative to the Meta Quest headsets offered by Meta and
+      is expected to recieve a following as it allows for native steam streaming in comparison to meta's
+      bloated streaming experience.
+   </p>
+
+   <button onclick="loadVideo('frameVideo', 'https://www.youtube.com/embed/TmTvmKxl20U')">
+      Show Steam Frame Video
+   </button>
+   <div class="video-box" id="frameVideo"></div>
+</div>
+
+<script>
+   function loadVideo(containerId, link) {
+      const box = document.getElementById(containerId);
+
+      // If video is already visible, do nothing
+      if (box.innerHTML.trim() !== "") {
+         box.style.display = "block";
+         return;
+      }
+
+      // Create iframe
+      const iframe = document.createElement("iframe");
+      iframe.src = link;
+      iframe.frameBorder = "0";
+      iframe.allow =
+         "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+
+      box.appendChild(iframe);
+      box.style.display = "block";
+   }
+</script>
+
+</body>
+</html>
