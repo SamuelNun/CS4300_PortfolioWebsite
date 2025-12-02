@@ -1,0 +1,71 @@
+body{
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family:monospace;
+}
+img{
+    width: 200px;
+    height: 250px;
+}
+
+.main{
+    /*I wanted to keep everything in the center and organized, and set a maximum width, which will make my content not exceed that width making it look the way it does*/
+    max-width: 800px; 
+
+    /* This is a margin leaving 16px spacing at the top and bottom , and left and right are automatically adjusted based on the window size */
+    margin: 16px auto; 
+
+}
+
+.card{
+
+    /*Spacing out 16px from the border so the text isn't too cluttered*/
+    padding: 16px; 
+
+    /*Border is 4px, solid, and making it curve*/
+    border: 4px solid gainsboro;
+    border-radius: 12px;
+
+    /*Adding color to the card*/
+    background-color: white;
+}
+
+.cat-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /*This allows the images to be stacked next to each other without overlapping*/
+    gap: 16px;
+}
+
+.cat{
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/*Animation! On hover, the image zooms in, giving a spotlight feeling*/
+.cat:hover img {
+    transform: scale(1.15);
+}
+
+.list{
+    /*Overwrites the padding from card,and moves it further right, fixing the problem where numbers overlaps the border*/
+    padding-left: 40px;
+}
+
+.table{
+    width: 100%;
+    overflow: hidden;
+    border-collapse: collapse; /* makes borders look cleaner */
+}
+
+h1{
+    font-size: 42px;
+}
+
+p{
+    color: tomato;
+}
+a {
+    color: tomato;
+}

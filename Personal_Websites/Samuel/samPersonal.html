@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>My Profile</title>
+      <link rel="stylesheet" href="samPersonal.css">
+   </head>
+
+   <body>
+      <div class="main">
+         <h1>Samuel Nunez</h1>
+         <p class="card" id="typewriter"></p>
+         <script> // From W3Schools: https://www.w3schools.com/howto/howto_js_typewriter.asp
+            var i = 0;
+            var txt = 'Hi, my name is Samuel Nunez, and I’m a Computer Science senior at the University of Houston-Downtown, set to graduate in December 2026. I’m interested in going into software engineering or embedded systems once I graduate. Right now, I am conducting research on how students interact with generative AI while coding. I analuze behavioral and physiological responses such as eye tracking and motion data to better understand how AI tools affect focus, stress and learning. Outside of school, music is a huge part of who I am. I’ve played several instruments over the years (piano, guitar, bass, violin, and drums), and currently volunteer as a guitarist at my church. Currently I am working on improving my guitar and piano skills, as well as learning music theory and how music is shaped. During summers, I love to teach programming and electronics to middle to high school students in a program called HoustonPREP. I’ve been working there for 4 consecutive summers and I enjoy teaching and seeing student’s creative projects.'; /* The text */
+            var speed = 15; /* The speed/duration of the effect in milliseconds */
+
+            function typeWriter() {
+               if (i < txt.length) {
+                  document.getElementById("typewriter").innerHTML += txt.charAt(i);
+                  i++;
+                  setTimeout(typeWriter, speed);
+               }
+            }
+            window.onload = typeWriter;
+         </script>
+
+         <h3>My favorite internet cats:</h3>
+         <nav class="cat-gallery">
+            <a class="cat" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG2MPAuut5z7Ym7Gpm_-hg8DblPwVJSpjxRg&s"></a>
+            <a class="cat" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDUG5X_mNJpREiK5aaMeioKNgo_1P3HYhxxQe2MgH0__-HsgJReNJrbMb_GMegl4gE7qc&usqp=CAU"></a>
+            <a class="cat" href="#"><img src="https://preview.redd.it/help-me-find-the-cat-or-og-picture-from-the-cat-owl-meowl-v0-2allh7likhgf1.png?width=256&format=png&auto=webp&s=e0d94bd595c7e3563f39d24b8c8d7cca4e34c000"></a>
+            <a class="cat" href="#"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMQPCJ5UOuQ8lBxIe9105Y4DJvmkXZ5nCibNcY-pDEIqHWj6VL"></a>
+         </nav>
+         
+         <h3>Here are my top 3 cat videos:</h3>
+         <ol class="list card">
+            <li><a  target=”_blank” href="https://www.youtube.com/watch?v=2C9YVLHL7hU">Cat Video 1</a></li>
+            <li><a  target=”_blank” href="https://www.youtube.com/watch?v=kG7d_4LeP48">Cat Video 2</a></li>
+            <li><a  target=”_blank” href="https://www.youtube.com/watch?v=mOg2Ln7RZvo">Cat Video 3</a></li>
+         </ol>
+
+         <h3>Programming Skills</h3>
+         <table class="table card" border="1" cellpadding="8" cellspacing="0">
+         <tr>
+            <th>Language</th>
+            <th>Experience Level</th>
+            <th>Projects</th>
+         </tr>
+         <tr>
+            <td>HTML & CSS</td>
+            <td>Advanced</td>
+            <td>HoustonPREP Grade Management System</td>
+         </tr>
+         <tr>
+            <td>JavaScript</td>
+            <td>Beginner</td>
+            <td>HoustonPREP Grade Management System</td>
+         </tr>
+         <tr>
+            <td>MySQL</td>
+            <td>Beginner</td>
+            <td>HoustonPREP Grade Management System</td>
+         </tr>
+         <tr>
+            <td>Python</td>
+            <td>Advanced</td>
+            <td>AI Research</td>
+         </tr>
+         <tr>
+            <td>C++</td>
+            <td>Intermediate</td>
+            <td>Energy Drink Company - Class Project</td>
+         </tr>
+         <tr>
+            <td>Java</td>
+            <td>Intermediate</td>
+            <td>Plant Monitor System using Raspberry Pi</td>
+         </tr>
+         </table>
+      </div>
+   </body>
+</html>

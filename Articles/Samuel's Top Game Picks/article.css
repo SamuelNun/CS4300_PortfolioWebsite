@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url("https://images.unsplash.com/photo-1548625361-58a9b86aa83b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BhY2UlMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #cccccc;
+  }
+
+  .box {
+    background: rgba(0, 0, 0, 0.82);
+    width: 85%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 12px;
+  }
+
+  h1 {
+    color: #ffdd66;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: #ffc640;
+    margin-top: 30px;
+  }
+
+  img {
+    height: 300px;
+  }
+  .game-title {
+    color: #8dcfff;
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  .game-desc {
+    margin-left: 5px;
+    color: #cccccc;
+    line-height: 1.45;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .funbox {
+    background: rgba(50,50,50,0.5);
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+  button {
+    background: #ffdd66;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  button:hover {
+    background: #ffe597;
+  }
